@@ -1,0 +1,242 @@
+{
+    "Title": "Artifact Acquisition",
+    "Credits": "Made by Vincent Stuhlmuller (vstuhlmu@ucsc.edu) in Visual Studio. Locations inspired by real life counterparts(mostly)",
+    "InitialLocation": "Marrakesh",
+    "Locations": {
+        "Marrakesh": {
+            "Body": "This is Marrakesh, a city located in Morocco. A major economic and tourist location in the country and on Africa. Filled to the brim with culture this is a great location to start your journey. You hear a low ringing from a nearby walkie talkie.",
+            "Choices": [
+                {
+                    "Text": "Europe",
+                    "Target": "Rome"
+                },
+                {
+                    "Text": "Pick up walkie talkie",
+                    "Target": "InteractRadio"
+                }
+            ]
+        },
+        "InteractRadio": {
+            "Body": "You approach the walkie talkie and see a small switch labeled 'Power'. Do you want to turn it on?",
+            "Choices": [
+                {
+                    "Text": "Turn on the radio",
+                    "Target": "TurnOnRadio"
+                },
+                {
+                    "Text": "Ignore the radio",
+                    "Target": "Marrakesh"
+                }
+            ]
+        },
+        "TurnOnRadio": {
+            "Body": "You turn on the radio and hear a crackling sound followed by a voice: 'This is the primary chief operator. We had to lock that basement, it is locked behind a code only found on this walkie talkie.'",
+            "Choices": [
+                {
+                    "Text": "Listen further",
+                    "Target": "ListenFurther"
+                },
+                {
+                    "Text": "Turn off the radio",
+                    "Target": "Marrakesh"
+                }
+            ]
+        },
+        "ListenFurther": {
+            "Body": "You continue listening to the radio and hear: 'My code is 310, should you open that basement be prepared.'",
+            "Choices": [
+                {
+                    "Text": "Turn off the radio",
+                    "Target": "Marrakesh"
+                }
+            ]
+        },
+        "Rome": {
+            "Body": "This is Rome, an ancient city with ruins and artifacts dating back millenia.",
+            "Choices": [
+                {
+                    "Text": "South America",
+                    "Target": "Tenochtitlan"
+                }
+            ]
+        },
+        "Tenochtitlan": {
+            "Body": "The ancient Aztec capital city of their empire, located in the center of Mexico City this city is thought to have existed since 1325. There is much unknown of this city with recent findings including a large circular opening on the floor shut behind an unknown mechanism. Perhaps the Aztecs left something for you to find?",
+            "Choices": [
+                {
+                    "Text": "Africa",
+                    "Target": "Cairo"
+                },
+                {
+                    "Text": "North America",
+                    "Target": "Pennsylvania"
+                },
+                {
+                    "Text": "Circle opening",
+                    "Target": "Lock"
+                }
+            ]
+        },
+        "Lock": {
+            "Body": "You find yourself in front of the recently discovered opening wondering what possibly could be through it.",
+            "Choices": [
+                {
+                    "Text": "Take out key",
+                    "Target": "Opening through the globe"
+                },
+                {
+                    "Text": "South America",
+                    "Target": "Tenochtitlan"
+                }
+            ]
+        },
+        "Opening through the globe": {
+            "Body": "The key hums and floats above the circle before it opens swiftly and the key falls straight through before you can react. You contemplate going throught he hole...",
+            "Choices": [
+                {
+                    "Text": "A hole is a hole",
+                    "Target": "Stonehenge"
+                },
+                {
+                    "Text": "I think I will abstain",
+                    "Target": "Tenochtitlan"
+                }
+            ]
+        },        
+        "Stonehenge": {
+            "Body": "One of the most ancient human structures known to exist and the center of many myths but how did we get to England from South America. Why did they hide this?",
+            "Choices": [
+                {
+                    "Text": "What is this?",
+                    "Target": "Select Destination"
+                }
+            ]
+        },
+        "Select Destination": {
+            "Body": "A massive map appear with a simple text on it. Where do you wish to go?",
+            "Choices": [
+                {
+                    "Text": "Marrakesh",
+                    "Target": "Marrakesh"
+                },
+                {
+                    "Text": "Rome",
+                    "Target": "Rome"
+                },
+                {
+                    "Text": "Tenochtitlan",
+                    "Target": "Tenochtitlan"
+                },
+                {
+                    "Text": "Cairo",
+                    "Target": "Cairo"
+                },
+                {
+                    "Text": "Pennsylvania",
+                    "Target": "Pennsylvania"
+                },
+                {
+                    "Text": "Ukraine",
+                    "Target": "Ukraine"
+                }
+            ]
+        },                
+        "Cairo": {
+            "Body": "The egyptian capital city, and the location of many ancient egyptian ruins and artifacts such as the pyrimads. What other secrets could be here?",
+            "Choices": [
+                {
+                    "Text": "North America",
+                    "Target": "Pennsylvania"
+                },
+                {
+                    "Text": "Europe",
+                    "Target": "Rome"
+                }
+            ]
+        },
+        "Pennsylvania": {  
+            "Body": "Here lies a decommisioned American nuclear power plant facility. This was the first commericial plant in the US being commisioned in 1958. This plant contains secrets from the groundbreaking technology created during the time of the space race and the cold war.",
+            "Choices": [
+                {
+                    "Text": "South America",
+                    "Target": "Tenochtitlan"
+                },
+                {
+                    "Text": "Eurasia",
+                    "Target": "Ukraine"
+                }
+            ]
+        },
+        "Ukraine": {
+            "Body": "Ukraine Chernobyl, this war torn nation, formerly part of the soviet union. Home to the Chernobyl nuclear coffin the ghost of a major nuclear disaster. The area around it is unihabitable by humans but holds many many secrets including a locked soviet attic.",
+            "Choices": [
+                {
+                    "Text": "The attic is locked by a pin code which appears to be of a non european desgin.",
+                    "Target": "Attempt code"
+                },
+                {
+                    "Text": "North America",
+                    "Target": "Pennsylvania"
+                }
+            ]
+        },
+        "Attempt code": {
+            "Body": "You grab the lock and prepare to put in the code, you also notice a unique key mechanism and wonder where that key might be?",
+            "Choices": [
+                {
+                    "Text": "Input code",
+                    "Input": true
+                }
+            ],
+            "Target": "InputCode" 
+        },
+        "Basement": {
+            "Body": "You have unlocked the basement. It's dark and musty. What do you do next?",
+            "Choices": [
+                {
+                    "Text": "Explore further",
+                    "Target": "ExploreBasement"
+                },
+                {
+                    "Text": "Leave the basement",
+                    "Target": "Ukraine" 
+                }
+            ]
+        },
+        "ExploreBasement": {
+            "Body": "You go further into the basement and hear a low hum. You find a light switch do you turn it on.",
+            "Choices": [
+                {
+                    "Text": "Turn on light",
+                    "Target": "LightsOn"
+                },
+                {
+                    "Text": "Turn back",
+                    "Target": "Basement" 
+                }
+            ]
+        },
+        "LightsOn": {
+            "Body": "The lights flicker on and you can see a large stone key causing a hum. What do you do?",
+            "Choices": [
+                {
+                    "Text": "Pick up key",
+                    "Target": "PickUpKey"
+                },
+                {
+                    "Text": "I don't do floating keys.",
+                    "Target": "Basement"
+                }
+            ]
+        },
+        "PickedUpKey": {
+            "Body": "The lights flicker as you stand in the room where the key once was. Perhaps you should check your locations again.",
+            "Choices": [
+                {
+                    "Text": "I do floating keys.",
+                    "Target": "Ukraine"
+                }
+            ]
+        }
+    }   
+}
